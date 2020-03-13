@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/login"
+    tools:context=".LoginnActivity">
+
+
+	<ImageView
+		android:id="@+id/login_app_logo"
+		android:layout_width="286dp"
+		android:layout_height="70dp"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/applogo"
+		tools:layout_editor_absoluteX="55dp"
+		tools:layout_editor_absoluteY="16dp" />
+
+	<EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_app_logo"
+        android:background="@drawable/input_design"
+        android:hint="User Name"
+		android:selectAllOnFocus="true"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+		android:textStyle="bold"
+		/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/username"
+        android:background="@drawable/input_design"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="20dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+	<Button
+		android:id="@+id/login_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/password"
+		android:background="@drawable/buttons"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:padding="17dp"
+		android:text="Login"
+		android:textAllCaps="false"
+		android:textColor="@android:color/white"
+		android:textSize="18sp"
+		/>
+
+
+</RelativeLayout>
