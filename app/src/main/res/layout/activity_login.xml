@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:background="@drawable/login"
-    tools:context=".LoginnActivity">
+    tools:context=".LoginActivity">
 
 
 	<ImageView
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_app_logo"
         android:background="@drawable/input_design"
-        android:hint="User Name"
+        android:hint="Email Address"
 		android:selectAllOnFocus="true"
         android:inputType="textEmailAddress"
         android:padding="20dp"

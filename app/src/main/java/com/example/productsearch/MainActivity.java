@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.productsearch.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,13 +16,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        joinNowButton = (Button) findViewById(R.id.main_join_now_button);
-        loginButton =(Button) findViewById(R.id.main_login_button);
+          loginButton= (Button) findViewById(R.id.main_join_now_button);
+        joinNowButton=(Button) findViewById(R.id.main_login_button);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        joinNowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });
