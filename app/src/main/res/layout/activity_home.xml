@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/register"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
+<EditText
+    android:id="@+id/search_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="search product..."
+    android:layout_margin="10dp"
+    />
+<view class="androidx.appcompat.app.AlertController$RecycleListView"
+    android:id="@+id/recycleView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="302dp"
-        android:layout_height="366dp"
-        android:text="Button" />
-</RelativeLayout>
+</LinearLayout>
